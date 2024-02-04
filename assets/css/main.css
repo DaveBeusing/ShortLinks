@@ -1,0 +1,78 @@
+html {
+    background-color:#F8F9F9;
+    padding:30px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+input, textarea, select, p, h3 {
+    outline:0;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+h3, p {
+    display: block;
+    margin: auto;
+    width:735px;
+    color: #a0a0a0;
+}
+
+.import {
+    display: block;
+    margin: auto;
+    width:735px;
+}
+
+.import input[type="text"], .import input[type="email"], .import input[type="date"] {
+    display: block;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #dfe0e0;
+    width: 120px;
+}
+.import input[type="number"] {
+    display: block;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #dfe0e0;
+    width: 120px;
+}
+.import input[type="text"]:focus, .import input[type="email"]:focus, .import input[type="date"]:focus {
+    border: 1px solid #518acb;
+}
+.import textarea {
+    resize: none;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #dfe0e0;
+    width: 700px;
+    height: 350px;
+}
+.import textarea:focus {
+    border: 1px solid #518acb;
+}
+.import input[type="submit"], .importlink {
+    display: block;
+    margin-top: 15px;
+    padding: 15px;
+    border: 0;
+    background-color: #518acb;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    width: 150px;
+}
+.import input[type="submit"]:hover {
+    background-color: #3670b3;
+}
+
+.import select {
+	display: block;
+	margin-top: 15px;
+	padding: 15px;
+	border: 1px solid #dfe0e0;
+	width: 152px;
+}

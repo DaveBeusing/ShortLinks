@@ -1,0 +1,22 @@
+
+/* SQLite3 Scheme */
+CREATE TABLE IF NOT EXISTS "url" (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	uid TEXT,
+	url TEXT,
+	created NUMERIC,
+	accessed NUMERIC,
+	views INTEGER NOT NULL DEFAULT 0
+);
+
+/* General SQL Scheme */
+CREATE TABLE urls (
+	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	uid VARCHAR(10),
+	url VARCHAR(1000) NOT NULL,
+	created DATETIME NOT NULL,
+	accessed DATETIME,
+	views INT UNSIGNED NOT NULL DEFAULT 0,
+	PRIMARY KEY (id),
+	UNIQUE (url)
+);
