@@ -57,9 +57,9 @@ switch( $mode ):
 	break;
 	case 'add':
 		$response = false;
-		$url = filter_input( INPUT_POST, 'url', FILTER_SANITIZE_SPECIAL_CHARS );
+		$url = filter_input( INPUT_POST, 'url', FILTER_SANITIZE_ENCODED );
 		if( $url ){
-			$response = $short->create( $url );
+			$response = $short->create( urldecode( $url ) );
 		}
 		$html->view(
 			'assets/html/import.html',
